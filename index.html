@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">✓ Todo App</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="todos.html" class="nav-link">My Todos</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <h1 class="hero-title">Welcome to Your Todo App</h1>
+            <p class="hero-subtitle">Stay organized and get things done with our beautiful todo list manager</p>
+            <div class="hero-buttons">
+                <a href="todos.html" class="btn btn-primary">Get Started</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <a class="feature-card-link" href="todos.html#add-todo">
+                    <div class="feature-card">
+                        <div class="feature-icon">➕</div>
+                        <h3>Add Todos</h3>
+                        <p>Quickly add new tasks to your todo list</p>
+                    </div>
+                </a>
+                <a class="feature-card-link" href="todos.html#manage-todos">
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Mark Complete</h3>
+                        <p>Check off completed tasks with a single click</p>
+                    </div>
+                </a>
+                <a class="feature-card-link" href="todos.html#manage-todos">
+                    <div class="feature-card">
+                        <div class="feature-icon">🗑️</div>
+                        <h3>Delete Tasks</h3>
+                        <p>Remove tasks you no longer need</p>
+                    </div>
+                </a>
+                <a class="feature-card-link" href="about.html#auto-save">
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3>Auto-Save</h3>
+                        <p>Your todos are automatically saved locally</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalTodos">0</div>
+                    <div class="stat-label">Total Todos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="completedTodos">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="pendingTodos">0</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Todo App. Stay productive!</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <a 
+        class="watermark" 
+        href="https://example.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Dev Sharma portfolio (temporary link)"
+    >
+        Dev Sharma • Portfolio
+    </a>
+</body>
+</html>
+

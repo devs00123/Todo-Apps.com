@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - My Todos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">✓ Todo App</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="todos.html" class="nav-link active">My Todos</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="todos-container">
+            <h1 class="page-title">My Todo List</h1>
+            
+            <div class="add-todo-section" id="add-todo">
+                <div class="input-group column">
+                    <div class="input-main">
+                        <input 
+                            type="text" 
+                            id="todoInput" 
+                            class="todo-input" 
+                            placeholder="Add a new todo..."
+                            maxlength="200"
+                        >
+                        <button id="addTodoBtn" class="btn btn-primary">Add Todo</button>
+                    </div>
+                    <div class="meta-row">
+                        <div class="select-control">
+                            <label for="prioritySelect">Priority</label>
+                            <select id="prioritySelect" class="todo-select">
+                                <option value="high">High</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="select-control">
+                            <label for="dueDateInput">Due date</label>
+                            <input type="date" id="dueDateInput" class="todo-select">
+                        </div>
+                    </div>
+                    <div class="char-row">
+                        <div id="validationMsg" class="validation-msg" role="alert"></div>
+                        <div id="charCount" class="char-count">0/200</div>
+                    </div>
+                    <div class="preset-buttons" id="presetButtons" aria-label="Quick add presets">
+                        <button type="button" class="preset-btn" data-preset="Buy groceries">Buy groceries</button>
+                        <button type="button" class="preset-btn" data-preset="Call Mom">Call Mom</button>
+                        <button type="button" class="preset-btn" data-preset="Plan the week">Plan the week</button>
+                        <button type="button" class="preset-btn" data-preset="30 min workout">30 min workout</button>
+                        <button type="button" class="preset-btn" data-preset="Read 20 pages">Read 20 pages</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="bulk-actions">
+                <label class="select-all">
+                    <input type="checkbox" id="selectAllCheckbox">
+                    Select all
+                </label>
+                <div class="bulk-buttons">
+                    <button type="button" id="completeSelectedBtn" class="btn btn-secondary">Complete selected</button>
+                    <button type="button" id="deleteSelectedBtn" class="btn btn-danger">Delete selected</button>
+                </div>
+            </div>
+
+            <div class="todos-stats">
+                <span id="todoCount">0 todos</span>
+            </div>
+
+            <div id="manage-todos"></div>
+            <div id="todosList" class="todos-list">
+                <!-- Todos will be dynamically inserted here -->
+            </div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h3>No todos yet</h3>
+                <p>Add your first todo above to get started!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Todo App. Stay productive!</p>
+    </footer>
+
+    <script src="todos.js"></script>
+    <a 
+        class="watermark" 
+        href="https://example.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Dev Sharma portfolio (temporary link)"
+    >
+        Dev Sharma • Portfolio
+    </a>
+</body>
+</html>
+
